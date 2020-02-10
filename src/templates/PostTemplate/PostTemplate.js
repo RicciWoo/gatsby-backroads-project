@@ -34,7 +34,7 @@ const PostTemplate = ({ data }) => {
           <article className={styles.text}>
             {documentToReactComponents(json, options)}
           </article>
-          <AniLink fade to="/posts" className="btnPrimary">
+          <AniLink fade to="/blog" className="btnPrimary">
             All Posts
           </AniLink>
         </div>
