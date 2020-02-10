@@ -13,8 +13,8 @@ const BlogTemplate = ({ data, pageContext }) => {
   const isFirst = currPage === 1;
   const isLast = currPage === numPages;
 
-  const prevPage = currPage - 1 === 1 ? `/blogs` : `/blogs/${currPage - 1}`;
-  const nextPage = `/blogs/${currPage + 1}`;
+  const prevPage = currPage - 1 === 1 ? `/posts` : `/posts/${currPage - 1}`;
+  const nextPage = `/posts/${currPage + 1}`;
 
   return (
     <Layout>
@@ -37,7 +37,7 @@ const BlogTemplate = ({ data, pageContext }) => {
               <AniLink
                 fade
                 key={i}
-                to={`/blogs/${i === 0 ? '' : i + 1}`}
+                to={`/posts/${i === 0 ? '' : i + 1}`}
                 className={
                   i + 1 === currPage
                     ? `${styles.link} ${styles.active}`

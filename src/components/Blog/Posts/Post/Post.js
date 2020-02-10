@@ -11,7 +11,7 @@ const Post = ({ blog }) => {
     <article className={styles.post}>
       <div className={styles.imgContainer}>
         <Img fluid={image.fluid} className={styles.img} alt="Single Post" />
-        <AniLink fade className={styles.link} to={`/blog/${slug}`}>
+        <AniLink fade className={styles.link} to={`/post/${slug}`}>
           Read More
         </AniLink>
         <h6 className={styles.date}>{published}</h6>

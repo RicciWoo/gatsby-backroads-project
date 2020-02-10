@@ -12,8 +12,8 @@ export default [
     text: 'Blog',
   },
   {
-    path: '/blogs',
-    text: 'Blogs',
+    path: '/posts',
+    text: 'Posts',
   },
   {
     path: '/contact',

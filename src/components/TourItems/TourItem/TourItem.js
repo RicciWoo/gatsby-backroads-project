@@ -30,7 +30,7 @@ const TourItem = ({ tour }) => {
     <article className={styles.tour}>
       <div className={styles.imgContainer}>
         <Img fluid={mainImage} className={styles.img} alt="Single Tour" />
-        <AniLink fade className={styles.link} to={`/tours/${slug}`}>
+        <AniLink fade className={styles.link} to={`/tour/${slug}`}>
           Details
         </AniLink>
       </div>
