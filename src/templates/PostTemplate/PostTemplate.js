@@ -22,20 +22,20 @@ const PostTemplate = ({ data }) => {
           alt="Single Post"
         />
       ),
-      'embedded-entry-block': ({ data }) => {
-        const { title, image, text } = data.target.fields;
-        return (
-          <div>
-            <h1>{title['en-US']}</h1>
-            <img
-              width="400"
-              src={image['en-US'].fields.file['en-US'].url}
-              alt="Another Post"
-            />
-            {documentToReactComponents(text['en-US'])}
-          </div>
-        );
-      },
+      // 'embedded-entry-block': ({ data }) => {
+      //   const { title, image, text } = data.target.fields;
+      //   return (
+      //     <div>
+      //       <h1>{title['en-US']}</h1>
+      //       <img
+      //         width="400"
+      //         src={image['en-US'].fields.file['en-US'].url}
+      //         alt="Another Post"
+      //       />
+      //       {documentToReactComponents(text['en-US'])}
+      //     </div>
+      //   );
+      // },
     },
   };
 
