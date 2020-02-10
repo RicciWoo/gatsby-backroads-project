@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
-import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { FaAlignRight } from 'react-icons/fa';
 
 import styles from './Navbar.module.css';
+import logo from '../../../images/logo.svg';
 import links from '../../../constants/Links';
 import socialLinks from '../../../constants/SocialLinks';
-import logo from '../../../images/logo.svg';
 
 const Navbar = () => {
   const [isOpen, setNav] = useState(false);
+
   const toggleNav = () => {
     setNav(isOpen => !isOpen);
   };
@@ -32,7 +33,9 @@ const Navbar = () => {
           {links.map((item, index) => {
             return (
               <li key={index}>
-                <Link to={item.path}>{item.text}</Link>
+                <AniLink fade to={item.path}>
+                  {item.text}
+                </AniLink>
               </li>
             );
           })}

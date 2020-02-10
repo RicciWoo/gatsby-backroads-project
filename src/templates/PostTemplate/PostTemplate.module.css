@@ -1,0 +1,21 @@
+.post {
+  padding: 4rem 0;
+}
+
+.center {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.post h1,
+.post h4 {
+  text-transform: capitalize;
+}
+
+.text {
+  margin: 2rem 0;
+}
+
+.text img {
+  max-width: 70vw;
+}

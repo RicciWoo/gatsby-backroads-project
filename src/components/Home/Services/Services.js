@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Title from '../../Title/Title';
 import styles from './Services.module.css';
 import services from '../../../constants/Services';
+import Title from '../../Title/Title';
 
 const Services = () => {
   return (
