@@ -6,6 +6,7 @@ import { graphql } from 'gatsby';
 
 import styles from './TourTemplate.module.css';
 import Layout from '../../components/Layout/Layout';
+import SEO from '../../components/SEO/SEO';
 import StyledBackground from '../../components/StyledBackground/StyledBackground';
 import Day from '../../components/TourItems/TourItem/Day/Day';
 
@@ -25,6 +26,7 @@ const TourTemplate = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={name} />
       <StyledBackground image={mainImage.fluid} />
       <section className={styles.template}>
         <div className={styles.center}>

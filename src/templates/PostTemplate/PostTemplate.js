@@ -5,6 +5,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 import styles from './PostTemplate.module.css';
 import Layout from '../../components/Layout/Layout';
+import SEO from '../../components/SEO/SEO';
 
 const PostTemplate = ({ data }) => {
   const {
@@ -27,6 +28,7 @@ const PostTemplate = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={title} />
       <section className={styles.post}>
         <div className={styles.center}>
           <h1>{title}</h1>

@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 
 import styles from './BlogTemplate.module.css';
 import Layout from '../../components/Layout/Layout';
+import SEO from '../../components/SEO/SEO';
 import Title from '../../components/Title/Title';
 import Post from '../../components/Blog/Posts/Post/Post';
 
@@ -18,6 +19,7 @@ const BlogTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
+      <SEO title="Posts" />
       <section className={styles.blog}>
         <Title title="Latest" subtitle="Posts" />
         <div className={styles.center}>

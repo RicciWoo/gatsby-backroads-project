@@ -33,5 +33,14 @@ module.exports = {
     },
     `gatsby-plugin-playground`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://gatsby-backroads-udemy.netlify.com',
+        sitemap: 'https://gatsby-backroads-udemy.netlify.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
   ],
 };
