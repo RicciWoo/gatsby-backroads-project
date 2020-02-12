@@ -6,13 +6,11 @@ import TourItem from './TourItem/TourItem';
 
 export default class TourItemsAll extends Component {
   state = {
-    tours: [],
     sortedTours: [],
   };
 
   componentDidMount() {
     this.setState({
-      tours: this.props.tours,
       sortedTours: this.props.tours,
     });
   }
